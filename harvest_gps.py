@@ -10,10 +10,6 @@ ser = serial.Serial('/dev/serial0', 9600, timeout=2)
 # set_rate_5hz = b'\xB5\x62\x06\x08\x06\x00\x64\x00\x01\x00\x01\x00\x7A\x12'
 # ser.write(set_rate_5hz)
 
-# Initialize an empty list to store data
-data_list = []
-initial_list =[]
-
 main_dict = {'GNGGA_Latitude': [],
              'GNGGA_Longitude': [],
              'GNGGA_Time': [],
@@ -36,8 +32,8 @@ main_dict = {'GNGGA_Latitude': [],
              'GPGSV_Sentence_Number': [],
              'GPGSV_Satellites_in_View': []
             }
-count_list = []
 
+count_list = []
 
 def convert_to_decimal(coord_str):
     # Split the coordinate string into degrees and minutes
