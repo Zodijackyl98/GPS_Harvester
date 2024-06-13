@@ -1,4 +1,4 @@
-Harvesting data from satellites in range using a GPS sensor like the one I testes with(U-blox M6). 
+Harvesting data from satellites in range using a GPS sensor like the one I tested with(U-blox M6). 
 Reading data directly coming to the sensor via serial ports on Raspberrypi 4 model B, using UART protocol then parsing NMEA sentences over time. 
 Separating usefull information depending on the type the sentence we receive. 
 THe most crucial part of it is to create Pandas data frame in real time while avoiding any errors related with different situations. To exemplify, 
