@@ -6,8 +6,7 @@ THe most crucial part of it is to create Pandas data frame in real time while av
   - When there is no connection(No fix situation).
   - After it's fixed, getting None values from satellites.
     - Then getting started receiving meaningfull sentences again.
-  - To ensure data safety, creating a csv file after each loop.
-After execution, it prints out several parameters for each iteration
+  - To ensure data safety, creating a csv file after each loop also it prints out several parameters for each iteration
 
 Only tested with the mentioned sensor but it's already adapted to work with similar types like 7M, N8M etc. Only difference would be small changes in NMEA sentences.
 Code also built by using Raspberrypi 4 Model B 8GB version, haven't tried to run with Zero or Pico but since you need to use Numpy and Pandas libraries, I don't think it's capable of working with Pico but the program is not actually depending on them, one can easily adjust it to just write with simple file manipulation functions that are already exist in Python. 
